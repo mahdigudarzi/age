@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+function calculateAge() {
   var birthdate = new Date('1995-10-07T03:00:00'); // Replace with your birthdate in the format 'YYYY-MM-DDTHH:mm:ss'
   var now = new Date();
 
@@ -53,4 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.getElementById('age').textContent = ageString;
+
+  requestAnimationFrame(calculateAge); // Call the function again on the next animation frame
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  calculateAge(); // Initial call to start the continuous update
 });
