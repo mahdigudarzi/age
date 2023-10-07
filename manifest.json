@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Age Calculator",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "chrome_url_overrides": {
+    "newtab": "popup.html"
+  },
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": true
+  }
+}
