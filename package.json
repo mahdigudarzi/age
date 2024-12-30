@@ -1,0 +1,16 @@
+{
+  "name": "age",
+  "version": "1.0.0",
+  "description": "این اکستنشن سن شما رو میگیره (البته تو کدش باید سنتون رو بزنید ) بعد بعد بهتون نمایش میده هر وقت تب جدید باز بکنید",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "package": "crx pack ./src -o  Age.crx  -p ./key.pem"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crx": "^5.0.1"
+  }
+}
